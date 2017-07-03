@@ -23,10 +23,10 @@ public class Anagrams {
 	 * @param str the str
 	 */
 	private static void recPrintAnagrams(String prefix, String str) {
-		if (str.isEmpty()) { // String is empty
+		int n = str.length();
+		if (n == 0) { // String is empty
 			System.out.println(prefix);
 		} else {
-			int n = str.length();
 			for (int i = 0; i < n; i++) { // Cut and add characters to prefix
 				recPrintAnagrams(prefix + str.charAt(i), str.substring(0, i) + str.substring(i + 1, n));
 			}
