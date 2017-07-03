@@ -54,7 +54,7 @@ public class FindPairsForSum {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr.length; j++) {
 				int value = sum - arr[i] - arr[j];
-				if (set.contains(value)) {
+				if (set.contains(value) && arr[i] != arr[j]) {
 					System.out.println(value + ", " + arr[i] + ", " + arr[j]);
 				} else {
 					set.add(arr[i] + arr[j]);
