@@ -7,10 +7,10 @@ public class QSort {
 
 	private static void sort(int array[], int low, int high) {
 		if (low < high) {
-	        int p = partition(array, low, high);
-	        sort(array, low, p - 1);
-	        sort(array, p + 1, high);
-    	}
+			int p = partition(array, low, high);
+			sort(array, low, p - 1);
+			sort(array, p + 1, high);
+    		}
 	}
 
 	private static int partition(int array[], int low, int high) {
